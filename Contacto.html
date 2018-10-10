@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Farmacia PARATI</title>
+        <link rel="stylesheet" href="css/Contacto.css">
+    </head>
+    <body>
+        <header>
+            <div class="barraSuperior" id="barraSuperior">
+                <img src="img/fotoFarmacia.jpg" alt="Foto_De_Farmacia" />
+                <div class="separador"></div>
+                <div class="acciones">
+                        <span class="buscador">
+                            <input type="text" name="buscador" id="buscador" placeholder="¿Que estás buscando?">                        
+                        </span>
+                        <span class="botonBuscar">
+                                <input type="submit" value=" ">
+                        </span>                   
+                </div>
+                <div class="separador"></div>
+                <div class="ver_carrito"><h3>Ver Carrito</h3></div>
+                <div class="carrito"> 
+                    <div class="numero"><p>1</p></div>
+                </div>
+                <div class="separador"></div>
+            </div>
+
+            <div class="barraInferior">
+                <ul>
+                    <li><a class="active" href="Index.html">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                  </ul>
+            </div>
+        </header>
+        <main>   
+                <form class="formulario" action="POST">
+                        <label for="nombre" class="nombre">Nombre</label>
+                        <input id="nombre" type="text">
+            
+                        <label for="apellido" class="apellido">Apellido</label>
+                        <input id="apellido" type="text">
+
+                        <label for="email">Email</label>
+                        <input id="email" type="email">
+            
+                        <label for="consulta">Consulta</label>
+                        <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
+                        <button>Enviar</button>
+                    </form>
+
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,210 @@
+*{ 
+    margin: 0; /*resetea los margenes por defecto que tienen los elementos html*/
+    padding: 0; /*resetea el padding (margen interno) de los elementos html*/
+}
+html,body{
+    /*background-image: url(../img/fondo.jpg); Imagen de fondo*/
+    font-family: 'Open Sans', sans-serif; /*Tipo de fuente*/
+    box-sizing:border-box;
+    font-size: 16px;
+}
+
+.flecha{
+    position:fixed;
+    right:10px;
+    bottom:20px;
+    padding: 10px;
+}
+
+h2{
+    color: #8cc129;
+    font-size: 1.4em;
+}
+
+h4{
+    margin-bottom: 0.7em;
+    font-size: 1.2em;
+}
+
+.barraSuperior{
+    display: flex;
+    width: 100%;
+    height: 85px;
+    background-color: white;   
+    position: fixed; 
+    z-index: 2;
+    border-bottom: 1px solid grey;
+}
+
+.barraSuperior img {
+    height: 100%;
+    cursor: pointer;
+}
+
+.barraSuperior .separador {
+    flex-grow: 1;
+}
+
+
+.barraSuperior .acciones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: .5rem;
+}
+
+.barraSuperior .acciones .buscador {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.barraSuperior .acciones .botonBuscar input {
+    border: 0;
+    background: url('../img/buscar.png') no-repeat scroll center;
+    background-size: contain;
+    padding: 1.3rem;
+    cursor: pointer;
+
+}
+.barraSuperior .carrito {
+    border: 0;
+    background: url('../img/cart-icon.png') no-repeat scroll center;
+    background-size: contain;
+    padding: 1.3rem;
+    cursor: pointer;
+}
+.barraSuperior .ver_carrito{
+    padding: 2.1rem 0.9rem;
+    color: #dde635;
+    cursor: pointer;
+
+}
+.barraSuperior .carrito .numero{
+    right:1px;
+    top:20px;
+    border-radius: 5px;
+    background: white;
+    position: inherit;
+}
+.barraSuperior .carrito .numero p{    
+    color: black;
+    font-size: 1.2rem;    
+}
+.barraSuperior .acciones .buscador input {
+    border: 0;
+    background: #eeeeee;
+    padding: 1rem;
+    color: gray;
+    
+}
+
+.barraInferior{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 85px;
+    position: relative;
+    background-color: #8cc129;
+    z-index: 1;
+}
+.banner{
+    background-image: url('../img/banner2.jpg') ;
+    width: 100%;
+    height: 280px;
+    position: relative;
+    top:85px;
+    z-index: 1;
+}
+
+section{
+    width: 80%; /*ancho expresado en porcentaje*/
+    margin: auto; /*la propiedad margin con el valor auto, centra verticalmente*/
+    position: relative;
+    top:85px;
+    z-index: 1;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    transition: 0.3s;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #808080;
+}
+
+.active {
+    background-color: #3c64b9;
+}
+
+
+
+form {
+    display: grid;
+    padding: 1em;
+    border: 1px;
+    margin: 2rem auto 0 auto;
+    max-width: 600px;
+    padding: 1em;
+    position: relative;
+    top:85px;
+  }
+  form input {
+    background: #fff;
+    border: 1px solid #9c9c9c;
+  }
+  form button {
+    background: lightgrey;
+    padding: 0.7em;
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+  }
+  form button:hover {
+    background: #808080;
+
+  }
+  
+  label {
+    padding: 0.5em 0.5em 0.5em 0;
+  }
+  
+  input {
+    padding: 0.7em;
+    margin-bottom: 0.5rem;
+  }
+  input:focus {
+    outline: 3px solid #808080;
+  }
+  
+  @media (min-width: 400px) {
+    form {
+      grid-template-columns: 200px 1fr;
+      grid-gap: 16px;
+    }
+  
+    label {
+      text-align: right;
+      grid-column: 1 / 2;
+    }
+  
+    input,
+    button {
+      grid-column: 2 / 3;
+    }
+  }

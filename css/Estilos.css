@@ -1,10 +1,10 @@
 *{ 
-    margin: 0; /*resetea los margenes por defecto que tienen los elementos html*/
-    padding: 0; /*resetea el padding (margen interno) de los elementos html*/
+    margin: 0; 
+    padding: 0; 
 }
 html,body{
-    font-family: 'Open Sans', sans-serif; /*Tipo de fuente*/
-    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+
     font-size: 16px;
 }
 
@@ -99,7 +99,7 @@ h4{
     background: #eeeeee;
     padding: 1rem;
     color: gray;
-    
+
 }
 
 .barraInferior{
@@ -114,16 +114,45 @@ h4{
 .banner{
     background-image: url('../img/banner2.jpg');
     width: 100%;
-    height: 280px;
+    height: 420px;
     position: relative;
     top:85px;
     z-index: 1;
     background-size: unset;
 }
+.como_comprar_titulo{
+    width: 100%;
+    position: relative;
+    top:85px;
+    margin-top: 40px;
+}
+.como_comprar_titulo h3{
+    text-align: center;
+}
+.columnas_como_comprar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    height: 200px;
+    margin: 10% 5% 5% 5%;
+}
+.columnas_como_comprar img{
+    height: 100%;
+    width: 90%;
+}
+.columnas_como_comprar .columna {
+    width: 23%;
+}
 
+.titulo {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 section{
-    width: 80%; /*ancho expresado en porcentaje*/
-    margin: auto; /*la propiedad margin con el valor auto, centra verticalmente*/
+    width: 80%; 
+    margin: auto; 
     position: relative;
     top:85px;
     z-index: 1;
@@ -153,15 +182,6 @@ li a:hover {
 
 .active {
     background-color: #3c64b9;
-}
-
-
-
-
-.titulo {
-    margin-top: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
 }
 
 .producto{
@@ -202,7 +222,98 @@ li a:hover {
 .producto .btn:hover{
     background-color:#aad677;
 }
+.medios_de_pago{
+    width: 100%; 
+    margin: auto; 
+    position: relative;
+    top:85px;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;    
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.columnas_medios_de_pago{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    height: 200px;
+    margin: 10% 5% 5% 5%;
+}
+.columnas_medios_de_pago img{
+    height: 30%;
+    width: 50%;
+}
+.columnas_medios_de_pago .columnaMDPago{
+    width: 23%;
+}
+footer{
+    border-top: 1px solid grey;
+    background-color: #8cc129;
+    height: 200px;
+    width: 100%;
+    display: flex;
 
+}
+.footer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+footer .info{
+    width: 33.33%;
+    padding: 20px;
+}
+footer .info p{
+    width: 100%;
+    padding-bottom: 1rem;
+}
+footer .menu{
+    float: relative;
+    width: 33.33%;
+    padding: 15px;
+    box-sizing: content-box;
+}
+footer .menu ul{
+    
+}
+footer .menu li{
+    list-style: none;
+    width: 100%;
+  text-align: left;
+  margin: 0;
+}
+footer .redes{
+    width: 33.33%;
+    padding: 1px;
+    align-content: center;
+}
+footer .redes img{
+    max-width: 20%;
+    max-height: 20%;
+    vertical-align: middle;
+    position:relative;
+    padding: 1rem;
+    cursor: pointer;
+}
+footer .redes a{
+    display: flex;
+    align-items: center;
+}
+footer .redes .facebook{
+    width: 100%;
+    height: 100px;
+        display: flex;
+    justify-content: center;
+}
+footer .redes .twitter{
+    width: 100%;
+        height: 100px;
+            display: flex;
+    justify-content: center;
+}
 @media screen and (min-width:30em){
     .producto{
         width: 45%;
@@ -219,17 +330,17 @@ li a:hover {
         width: 30%;
         margin: 1em 1.5%;
     }
-        .banner{
-            background-size: cover;
+    .banner{
+        background-size: cover;
     }
 }
 
- @media screen and (max-width:500px){
+@media screen and (max-width:500px){
     .producto{
         width: 30%;
         margin: 1em 1.5%;
     }
-        .banner{
-            display: none;
-        }
+    .banner{
+        display: none;
+    }
 } 

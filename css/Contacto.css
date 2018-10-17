@@ -97,7 +97,7 @@ h4{
     background: #eeeeee;
     padding: 1rem;
     color: gray;
-    
+
 }
 
 .barraInferior{
@@ -117,7 +117,9 @@ h4{
     top:85px;
     z-index: 1;
 }
-
+main{
+    height:auto;
+}
 section{
     width: 80%; /*ancho expresado en porcentaje*/
     margin: auto; /*la propiedad margin con el valor auto, centra verticalmente*/
@@ -163,48 +165,129 @@ form {
     padding: 1em;
     position: relative;
     top:85px;
-  }
-  form input {
+}
+form input {
     background: #fff;
     border: 1px solid #9c9c9c;
-  }
-  form button {
+}
+form button {
     background: lightgrey;
     padding: 0.7em;
     width: 100%;
     border: 0;
     cursor: pointer;
-  }
-  form button:hover {
+}
+form button:hover {
     background: #808080;
 
-  }
-  
-  label {
+}
+
+label {
     padding: 0.5em 0.5em 0.5em 0;
-  }
-  
-  input {
+}
+
+input {
     padding: 0.7em;
     margin-bottom: 0.5rem;
-  }
-  input:focus {
+}
+input:focus {
     outline: 3px solid #808080;
-  }
-  
-  @media (min-width: 400px) {
+}
+.mapa{
+    max-width: 600px;
+        margin: 5rem;
+margin-left: 30%;
+}
+.mapa h1{
+    align-content: center;
+    display: flex;
+    margin-left: 5rem;
+}
+.mapa .mapa_ubicacion {
+
+    width: 400px;
+    height: 400px;
+
+}
+footer{
+    border-top: 1px solid grey;
+    background-color: #8cc129;
+    height: 200px;
+    width: 100%;
+    display: flex;
+
+}
+.footer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+footer .info{
+    width: 33.33%;
+    padding: 20px;
+}
+footer .info p{
+    width: 100%;
+    padding-bottom: 1rem;
+}
+footer .menu{
+    float: relative;
+    width: 33.33%;
+    padding: 15px;
+    box-sizing: content-box;
+}
+footer .menu ul{
+
+}
+footer .menu li{
+    list-style: none;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+}
+footer .redes{
+    width: 33.33%;
+    padding: 1px;
+    align-content: center;
+}
+footer .redes img{
+    max-width: 20%;
+    max-height: 20%;
+    vertical-align: middle;
+    position:relative;
+    padding: 1rem;
+    cursor: pointer;
+}
+footer .redes a{
+    display: flex;
+    align-items: center;
+}
+footer .redes .facebook{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+footer .redes .twitter{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 400px) {
     form {
-      grid-template-columns: 200px 1fr;
-      grid-gap: 16px;
+        grid-template-columns: 200px 1fr;
+        grid-gap: 16px;
     }
-  
+
     label {
-      text-align: right;
-      grid-column: 1 / 2;
+        text-align: right;
+        grid-column: 1 / 2;
     }
-  
+
     input,
     button {
-      grid-column: 2 / 3;
+        grid-column: 2 / 3;
     }
-  }
+}

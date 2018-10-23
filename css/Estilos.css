@@ -252,7 +252,7 @@ li a:hover {
 footer{
     border-top: 1px solid grey;
     background-color: #8cc129;
-    height: 200px;
+    height: auto;
     width: 100%;
     display: flex;
 
@@ -291,27 +291,16 @@ footer .redes{
     align-content: center;
 }
 footer .redes img{
-    max-width: 20%;
-    max-height: 20%;
-    vertical-align: middle;
-    position:relative;
-    padding: 1rem;
+
     cursor: pointer;
 }
 footer .redes a{
     display: flex;
     align-items: center;
 }
-footer .redes .facebook{
-    width: 100%;
-    height: 100px;
+footer .redes .link{
+        margin: 1rem;
         display: flex;
-    justify-content: center;
-}
-footer .redes .twitter{
-    width: 100%;
-        height: 100px;
-            display: flex;
     justify-content: center;
 }
 @media screen and (min-width:30em){

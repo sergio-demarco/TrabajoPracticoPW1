@@ -3,17 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Farmacia PARATI</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="css/Contacto.css">
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-        <script>
-function myMap() {
-  var mapCanvas = document.getElementById("mapa_ubicacion");
-  var mapOptions = {
-    center: new google.maps.LatLng(-34.6, 58.5), zoom: 5
-  };
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-}
-</script>
     </head>
     <body>
         <header>
@@ -45,26 +36,48 @@ function myMap() {
             </div>
         </header>
         <main>   
-            <form class="formulario" action="POST">
-                <label for="nombre" class="nombre">Nombre</label>
-                <input id="nombre" type="text">
+            <div class="contacto_seccion">
+                <div class="columna1">
+                    <p>Direccion: <b>Av. Rivadavia 14002, Ramos Mejia, Pcia de Buenos Aires, Argentina.</b>
+                    </p>
+                    <p>Horarios de Atencion: <b>Abierto las 24 Horas.</b>
+                    </p>
+                    <p>Telefono: <b>+54 11 4658-0276</b></p>
+                    <p><b>Nuestra Historia</b></p>
+                    <p>
+                        Evolucionar e impulsar una idea hasta materializarla. Ese fue el espíritu que movilizó y trazó el rumbo de Farmacias Central Oeste. Una historia cultivada a base de pasión, conocimiento, innovación y profesionalismo. Cinco décadas de trabajo y una firme decisión de muchas décadas más.
+                        El entusiasmo, el esfuerzo y la dedicación emprendedora hicieron que Farmacia Halpern diera el primer paso y abriera al público. Con el foco puesto siempre en brindar cada día lo mejor a sus clientes y darle valor al barrio, fue una verdadera renovación. La estructura vidriada, toda una novedad para esos años, invitaba a descubrir la atención personalizada y cálida de la farmacia de barrio.
+                        Con estas dos farmacias, los desafíos eran cada vez más grandes. Pero el espíritu innovador llevó a incorporar novedosos adelantos tecnológicos. En 1984 empezó a funcionar el autoservicio de perfumería y a mediados de los 90 se instaló un sistema robotizado para la dispensa de medicamentos.
 
-                <label for="apellido" class="apellido">Apellido</label>
-                <input id="apellido" type="text">
+                        Siempre se pensó un poco más allá. La innovación constante fue uno de los pilares del crecimiento.
+                    </p>
+                </div>
+                <div class="columna2">
+                    <form action="POST">
+                        <label for="nombre" class="nombre">Nombre</label>
+                        <input id="nombre" type="text">
 
-                <label for="email">Email</label>
-                <input id="email" type="email">
+                        <label for="apellido" class="apellido">Apellido</label>
+                        <input id="apellido" type="text">
 
-                <label for="consulta">Consulta</label>
-                <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
-                <button>Enviar</button>
-            </form>
+                        <label for="email">Email</label>
+                        <input id="email" type="email">
+
+                        <label for="consulta">Consulta</label>
+                        <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
+                        <button>Enviar</button>
+                    </form>
+                </div>
+            </div>
+
             <div class="mapa">
                 <h1>UBICACION</h1>
 
-                <div class="mapa_ubicacion"></div>
+                <div class="mapa_ubicacion">             
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13130.177702731375!2d-58.5644536!3d-34.6409513!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f8985ab1901e9bf!2sFarmacias+Central+Oeste!5e0!3m2!1ses!2sar!4v1540058673383" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
             </div>
-            
+
         </main>
         <footer>
             <div class="info">
@@ -75,18 +88,26 @@ function myMap() {
             <div class="menu">
                 <ul>
                     <li><a href="Index.html">Menu</a></li>
-                    <li><a href="#section">Productos</a></li>
+                    <li><a href="Index.html">Productos</a></li>
                     <li><a href="Contacto.html">Contacto</a></li>
                 </ul>
             </div>
             <div class="redes">
-                <a class="facebook" href="https://www.facebook.com">
+                <a class="link" href="https://www.facebook.com/centraloestesaludable">
                     <img src="img/Facebook_logo.png">
-                    <span>@FarmaciaParaTi</span>
+                    <span> @FarmaciaParaTi</span>
                 </a>
-                <a class="twitter" href="https://www.twitter.com">
+                <a class="link" href="https://twitter.com/CentralOeste">
                     <img src="img/Twitter_logo.png">
-                    <span>@FarmaciaParaTi</span>
+                    <span> @FarmaciaParaTi</span>
+                </a>
+                <a class="link" href="https://www.youtube.com/channel/UCgux0xTdGRIdpNADARfAVlQ">
+                    <img src="img/YouTube_icon.png">
+                    <span> @FarmaciaParaTi</span>
+                </a>
+                <a class="link" href="https://www.instagram.com/centraloeste/">
+                    <img src="img/Instagram_icon.png">
+                    <span> @FarmaciaParaTi</span>
                 </a>
             </div>
         </footer>

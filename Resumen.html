@@ -4,12 +4,12 @@
         <meta charset="UTF-8">
         <title>Farmacia PARATI</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link rel="stylesheet" href="css/Contacto.css">
+        <link rel="stylesheet" href="css/resumen.css">
     </head>
     <body>
         <header>
             <div class="barraSuperior" id="barraSuperior">
-                <img src="img/fotoFarmacia.jpg" alt="Foto_De_Farmacia" />
+                <a href="Index.html"><img src="img/fotoFarmacia.jpg" alt="Foto_De_Farmacia" /></a>
                 <div class="separador"></div>
                 <div class="acciones">
                     <span class="buscador">
@@ -20,9 +20,9 @@
                     </span>                   
                 </div>
                 <div class="separador"></div>
-                <div class="ver_carrito"><h3>Ver Carrito</h3></div>
+                <div class="ver_carrito"><a href="Resumen.html"><h3>Ver Carrito</h3></a></div>
                 <div class="carrito"> 
-                    <div class="numero"><p>1</p></div>
+                    <a href="Resumen.html"><div class="numero"><p>1</p></div></a>
                 </div>
                 <div class="separador"></div>
             </div>
@@ -36,8 +36,55 @@
             </div>
         </header>
         <main>   
-            
+            <div class="tabla_productos">
 
+                <h2>Productos en el carrito</h2>
+                <p>Verifique sus productos, puede modificar las cantidades, o especificar el tipo </p>
+
+                <table>
+                    <tr>
+                        <th>Descripcion</th>
+                        <th>Precio Unitario</th> 
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                        <th>Estado</th>
+                    </tr>
+                    <tr>
+                        <td>Ibupirac 800</td>
+                        <td>$ 420.00</td>
+                        <td> 2</td>
+                        <td>$ 840.00</td>
+                        <td><a href="#" class="btn">Modificar</a> </td>
+
+                    </tr>
+                    <tr>
+                        <td>Tafirol Plus</td>
+                        <td>$ 312.00</td>
+                        <td> 1</td>
+                        <td>$ 312.00</td>
+                        <td><a href="#" class="btn">Modificar</a> </td>
+
+                    </tr>
+                    <tr>
+                        <td>Alikal</td>
+                        <td>$ 60.00</td>
+                        <td> 5</td>
+                        <td>$ 300.00</td>
+                        <td><a href="#" class="btn">Modificar</a> </td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td> </td>
+                        <td>Subtotal:</td>
+                        <td>$ 1452.00 </td>
+                        <td> </td>
+                    </tr> 
+                </table>
+                <div class="botones_compra">
+                    <span class="seguir_comprando"><a href="Index.html"><p>Seguir Comprando</p></a></span>
+                    <span class="finalizar_compra"><a href="#"><p>Finalizar</p></a></span>
+                </div>
+            </div>
         </main>
         <footer>
             <div class="info">

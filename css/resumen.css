@@ -76,7 +76,7 @@ h4{
 }
 .barraSuperior .ver_carrito a{
     text-decoration: none;
-        color: #dde635;
+    color: #dde635;
 }
 .barraSuperior .carrito {
     border: 0;
@@ -102,7 +102,7 @@ h4{
     font-size: 1.2rem;    
 }
 .barraSuperior .acciones .buscador input {
-    border: 0;
+    border: 0;a
     background: #eeeeee;
     padding: 1rem;
     color: gray;
@@ -191,44 +191,96 @@ li a:hover {
 .active {
     background-color: #3c64b9;
 }
-
-.producto{
-    text-align: center;
-    padding: 1rem;
-    background: #ffffff;
-    margin-bottom: 1rem;
-    box-sizing: border-box;
-}
-.producto img{
-    max-width: 100%;
+main{
     height: auto;
-    margin-bottom: 1rem;
 }
-.producto .nombre {
-    font-size: 1rem;
-}
+.tabla_productos{
+    width: 80%;
+    position: relative;
+    margin: 120px auto auto auto;
 
-.producto .marca {
-    font-size: .8rem;
-    color: #808080;
-    padding: 10px;
 }
-
-.producto .precio {
-    font-size: 1.5rem;
+.tabla_productos h2{
+    margin-left: 20%;
+    color: #212121;
 }
-
-.producto .btn{
+.tabla_productos p{
+    margin-left: 20%;
+    color: #757575;
+}
+table{
+    width: 80%;
+}
+table, th, td {
+    margin: 2rem auto 2rem auto ;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+}
+.tabla_productos .btn{
+    margin-left: 20%;
     display: inline-block;
     margin-top: .5rem;
     text-decoration: none;
     padding: 0.4rem 1rem;
-    background-color: #8cc129;
+    background-color: #757575;
     color: #fff;
     transition: background-color 0.4s ease 0;
+    border-radius: 5px;
 }
-.producto .btn:hover{
+.tabla_productos .btn:hover{
     background-color:#aad677;
+    transition: 0.3s;
+}
+.botones_compra{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+
+}
+.botones_compra p{
+    margin-top: 3px;
+    text-align: justify;
+    color: white;
+}
+.botones_compra a{
+    text-decoration: none;
+}
+
+.seguir_comprando{
+    background-color: #60BB46;
+
+    position: relative;
+    width: 200px;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    height: 25px;
+    cursor: pointer;
+}
+.botones_compra .seguir_comprando:hover{
+    background-color: #aad677;
+    transition: 0.3s;
+}
+.finalizar_compra{
+    background-color: #60BB46;
+
+    position: relative;
+    width: 120px;
+    margin: 1rem;
+    padding: 0.5rem;
+
+    border-radius: 5px;
+    height: 25px;
+    cursor: pointer;
+
+}
+.botones_compra .finalizar_compra:hover{
+    background-color: #aad677;
     transition: 0.3s;
 }
 .medios_de_pago{

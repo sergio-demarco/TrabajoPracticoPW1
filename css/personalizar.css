@@ -1,11 +1,10 @@
 *{ 
-    margin: 0; /*resetea los margenes por defecto que tienen los elementos html*/
-    padding: 0; /*resetea el padding (margen interno) de los elementos html*/
+    margin: 0; 
+    padding: 0; 
 }
 html,body{
-    /*background-image: url(../img/fondo.jpg); Imagen de fondo*/
-    font-family: 'Open Sans', sans-serif; /*Tipo de fuente*/
-    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+
     font-size: 16px;
 }
 
@@ -68,6 +67,7 @@ h4{
     cursor: pointer;
 
 }
+
 .barraSuperior .ver_carrito{
     padding: 2.1rem 0.9rem;
     color: #dde635;
@@ -96,12 +96,13 @@ h4{
     background: white;
     position: absolute;
 }
+
 .barraSuperior .carrito .numero p{    
     color: black;
     font-size: 1.2rem;    
 }
 .barraSuperior .acciones .buscador input {
-    border: 0;
+    border: 0;a
     background: #eeeeee;
     padding: 1rem;
     color: gray;
@@ -118,17 +119,51 @@ h4{
     z-index: 1;
 }
 .banner{
-    background-image: url('../img/banner2.jpg') ;
+    background-image: url('../img/banner2.jpg');
     width: 100%;
-    height: 280px;
+    height: 420px;
+    position: relative;
+    top:85px;
+    z-index: 1;
+    background-size: unset;
+}
+.como_comprar_titulo{
+    width: 100%;
+    position: relative;
+    top:85px;
+    margin-top: 40px;
+}
+.como_comprar_titulo h3{
+    text-align: center;
+}
+.columnas_como_comprar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    height: 200px;
+    margin: 10% 10% 5% 10%;
+}
+.columnas_como_comprar img{
+    height: 100%;
+    width: 70%;
+}
+.columnas_como_comprar .columna {
+    width: 23%;
+}
+
+.titulo {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+section{
+    width: 80%; 
+    margin: auto; 
     position: relative;
     top:85px;
     z-index: 1;
 }
-main{
-    height:100%;
-}
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -156,83 +191,40 @@ li a:hover {
 .active {
     background-color: #3c64b9;
 }
-.contacto_seccion{
-    width: 80%;
-    margin: auto;
+
+
+
+.medios_de_pago{
+    width: 100%; 
+    margin: auto; 
+    position: relative;
+    top:85px;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;    
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.columnas_medios_de_pago{
     display: flex;
     justify-content: space-between;
-    height: auto;
-}
-.columna1{
-    margin-top: 7.5rem;
-    width: 40%;
-    margin-left: 10%;
-}
-.columna1 p{
-    padding: 0 0 20px;
-    margin: 0;
-}
-.columna2{
-    margin-top: 5rem;
-    width: 60%;
-    margin-right: 10%;
-}
-
-form {
-    display: grid;
-    padding: 1em;
-    border: 1px;
-    margin: 2rem auto auto auto;
     position: relative;
-    width: 100%;
+    z-index: 1;
+    height: 200px;
+    margin: 10% 5% 5% 5%;
 }
-form input {
-    background: #fff;
-    border: 1px solid #9c9c9c;
+.columnas_medios_de_pago img{
+    height: 30%;
+    width: 50%;
 }
-form button {
-    background: lightgrey;
-    padding: 0.7em;
-    width: 100%;
-    border: 0;
-    cursor: pointer;
-}
-form button:hover {
-    background: #808080;
-    transition: 0.3s;
-
-}
-
-label {
-    padding: 0.5em 0.5em 0.5em 0;
-}
-
-input {
-    padding: 0.7em;
-    margin-bottom: 0.5rem;
-}
-input:focus {
-    outline: 3px solid #808080;
-}
-.mapa{
-    width: 80%;
-    margin: auto;
-}
-.mapa h1{
-    text-align: center;
-    margin: 5rem 0 2rem 0;
-}
-.mapa .mapa_ubicacion {
-    margin-top: 50px;
-    width: 80%;
-    margin: auto;
-    height: 400px;
-
+.columnas_medios_de_pago .columnaMDPago{
+    width: 23%;
 }
 footer{
     border-top: 1px solid grey;
     background-color: #8cc129;
-    height: 200px;
+    height: auto;
     width: 100%;
     display: flex;
 
@@ -283,20 +275,33 @@ footer .redes .link{
     display: flex;
     justify-content: center;
 }
-
-@media (min-width: 400px) {
-    form {
-        grid-template-columns: 200px 1fr;
-        grid-gap: 16px;
+@media screen and (min-width:30em){
+    .producto{
+        width: 45%;
+        float: left;
+        margin: 1em 2.5%;
+    }
+    .banner{
+        background-size: cover;
     }
 
-    label {
-        text-align: right;
-        grid-column: 1 / 2;
+}
+@media screen and (min-width:60em){
+    .producto{
+        width: 30%;
+        margin: 1em 1.5%;
     }
-
-    input,
-    button {
-        grid-column: 2 / 3;
+    .banner{
+        background-size: cover;
     }
 }
+
+@media screen and (max-width:500px){
+    .producto{
+        width: 30%;
+        margin: 1em 1.5%;
+    }
+    .banner{
+        display: none;
+    }
+} 

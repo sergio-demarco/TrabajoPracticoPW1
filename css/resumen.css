@@ -38,6 +38,7 @@ h4{
 .barraSuperior img {
     height: 100%;
     cursor: pointer;
+    width: 40%;
 }
 
 .barraSuperior .separador {
@@ -102,12 +103,13 @@ h4{
     font-size: 1.2rem;    
 }
 .barraSuperior .acciones .buscador input {
-    border: 0;a
+    border: 0;
     background: #eeeeee;
     padding: 1rem;
     color: gray;
 
 }
+
 
 .barraInferior{
     width: 100%;
@@ -283,33 +285,7 @@ th, td {
     background-color: #aad677;
     transition: 0.3s;
 }
-.medios_de_pago{
-    width: 100%; 
-    margin: auto; 
-    position: relative;
-    top:85px;
-    z-index: 1;
-    display: inline-block;
-    text-align: center;    
-    margin-top: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-.columnas_medios_de_pago{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    z-index: 1;
-    height: 200px;
-    margin: 10% 5% 5% 5%;
-}
-.columnas_medios_de_pago img{
-    height: 30%;
-    width: 50%;
-}
-.columnas_medios_de_pago .columnaMDPago{
-    width: 23%;
-}
+
 footer{
     border-top: 1px solid grey;
     background-color: #8cc129;

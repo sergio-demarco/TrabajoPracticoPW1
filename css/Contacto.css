@@ -39,6 +39,7 @@ h4{
 .barraSuperior img {
     height: 100%;
     cursor: pointer;
+    width: 40%;
 }
 
 .barraSuperior .separador {

@@ -103,7 +103,7 @@ h4{
     font-size: 1.2rem;    
 }
 .barraSuperior .acciones .buscador input {
-    border: 0;a
+    border: 0;
     background: #eeeeee;
     padding: 1rem;
     color: gray;
@@ -152,7 +152,7 @@ li a:hover {
     width: 80%;
     margin: 3rem auto 1rem auto;
     position: relative;
-        top:85px;
+    top:85px;
     justify-content: space-between;
     display: flex;
 }
@@ -162,26 +162,56 @@ li a:hover {
 
 }
 .imagen_detalle img{
-  
+ width: 80%;
+    height: 80%;
+    margin: auto;
 }
 .detalles{
     width: 50%;
-        position: relative;
+    position: relative;
+}
+.detalles h2{
+    margin-bottom: 1rem;
+}
+.detalles input{
+        margin-bottom: 1rem;
+}
+.detalles input[type="text"] {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    border-bottom-style: none;
+}
+.detalles input[type="submit"] {
+    width: 30%;
+    padding: 2rem;
+    margin-right: 20%;
+    float: right;
 
 }
-.medios_de_pago{
-    width: 100%; 
+.detalles p{
+    margin-bottom: 1rem;
+}
+.detalles td {
+ text-align: center;
+}
+.detalles td img{
+    width: 50%;
+    height: 50%;
+}
+.otros_productos{
+    width: 80%; 
     margin: auto; 
     position: relative;
     top:85px;
     z-index: 1;
     display: inline-block;
     text-align: center;    
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-left: 1rem;
     margin-right: 1rem;
 }
-.columnas_medios_de_pago{
+.columnas_otros_productos{
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -189,11 +219,11 @@ li a:hover {
     height: 200px;
     margin: 10% 5% 5% 5%;
 }
-.columnas_medios_de_pago img{
-    height: 30%;
-    width: 50%;
+.columnas_otros_productos img{
+    height: 50%;
+    width: 80%;
 }
-.columnas_medios_de_pago .columnaMDPago{
+.columnas_otros_productos .columna_otro_producto{
     width: 23%;
 }
 footer{

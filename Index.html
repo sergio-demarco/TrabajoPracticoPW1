@@ -5,9 +5,10 @@
         <title>Farmacia PARATI</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script type="text/javascript" src="js/index.js"></script>
     </head>
-    <body onload="mostrar_Banners()">
+    <body onload="Carousel();">
         <header id="header">
             <div class="barraSuperior" >
                 <a href="Index.html"><img src="img/fotoFarmacia.jpg" alt="Foto_De_Farmacia" /></a>
@@ -23,8 +24,8 @@
                 </div>
                 <div class="separador"></div>
                 <div class="ver_carrito"><a href="Resumen.html"><h3>Ver Carrito</h3></a></div>
-                <div class="carrito" onclick="location.href='Resumen.html';" > 
-                    <div class="numero"><p>1</p></div>
+                <div class="carrito" onclick="VerCarrito();" > 
+                    <div class="numero"><p id="numero_carrito">1</p></div>
                 </div>
                 <div class="separador"></div>
             </div>
@@ -44,7 +45,8 @@
                 </a>
             </div>
             <div class="banner" id="banner">
-            <img src="img/banner2.jpg" alt="banner">
+            <img class="imgbanner w3-animate-left" src="img/banner2.jpg" alt="banner">
+            <img class="imgbanner w3-animate-left" src="img/banner3.jpg" alt="banner">
             </div>
             <div class="como_comprar_titulo"><h3>COMO COMPRAR</h3></div>
             <div class="columnas_como_comprar">
@@ -58,61 +60,101 @@
 
                 <h3 class="titulo">PRODUCTOS</h3>
 
-                <article class="producto">
+                <article class="producto" id="Producto1">
                     <img src="img/001.jpg" alt="Producto1">
-                    <h2 class="nombre">Anaflex </h2>
-                    <div class="marca">Bagó</div>
-                    <div class="precio">$325</div>
-                    <a href="#" class="btn">Agregar Al Carrito</a>
+                    <h2 class="nombre" id="Producto1_nombre">Anaflex </h2>
+                    <div class="marca" id="Producto1_marca">Bagó</div>
+                    <div class="precio" id="Producto1_precio">$325</div>
+                    <div>
+                        <input type="number" id="Producto1_cantidad" class="input_cantidad" value="1"> 
+                        <a href="#section" class="btn" onclick="AgregarAlCarrito(1);">
+                            Agregar Al Carrito
+                        </a>
+                    </div>
                 </article>
                 <article class="producto">
                     <img src="img/002.jpg" alt="Producto2">
-                    <h2 class="nombre">Ibupirac 800 </h2>
-                    <div class="marca">Pfizer</div>
-                    <div class="precio">$420</div>
-                    <a href="#" class="btn">Agregar Al Carrito</a>
+                    <h2 class="nombre" id="Producto2_nombre">Ibupirac 800 </h2>
+                    <div class="marca" id="Producto2_marca">Pfizer</div>
+                    <div class="precio" id="Producto2_precio">$420</div>
+                    <div>
+                        <input type="number" id="Producto2_cantidad" class="input_cantidad" value="1"> 
+                        <a href="#section" class="btn" onclick="AgregarAlCarrito(2);">
+                            Agregar Al Carrito
+                        </a>
+                    </div>
                 </article>
                 <article class="producto">
                     <img src="img/003.jpg" alt="Producto3">
-                    <h2 class="nombre">Tafirol Plus </h2>
-                    <div class="marca">Pharmabiz</div>
-                    <div class="precio">$312</div>
-                    <a href="#" class="btn">Agregar Al Carrito</a>
+                    <h2 class="nombre" id="Producto3_nombre">Tafirol Plus </h2>
+                    <div class="marca" id="Producto3_marca">Pharmabiz</div>
+                    <div class="precio" id="Producto3_precio">$312</div>
+                    <div>
+                        <input type="number" id="Producto3_cantidad" class="input_cantidad" value="1"> 
+                        <a href="#section" class="btn" onclick="AgregarAlCarrito(3);">
+                            Agregar Al Carrito
+                        </a>
+                    </div>
                 </article>
                 <article class="producto">
                     <img src="img/004.jpg" alt="Producto4">
-                    <h2 class="nombre">Berocca </h2>
-                    <div class="marca">Bayer</div>
-                    <div class="precio">$411</div>
-                    <a href="#" class="btn">Agregar Al Carrito</a>
+                    <h2 class="nombre" id="Producto4_nombre">Berocca </h2>
+                    <div class="marca" id="Producto4_marca">Bayer</div>
+                    <div class="precio" id="Producto4_precio">$411</div>
+                    <div>
+                        <input type="number" id="Producto4_cantidad" class="input_cantidad" value="1"> 
+                        <a href="#section" class="btn" onclick="AgregarAlCarrito(4);">
+                            Agregar Al Carrito
+                        </a>
+                    </div>
                 </article>
                 <article class="producto">
                     <img src="img/005.jpg" alt="Producto5">
-                    <h2 class="nombre">Bandas Respira Mejor </h2>
-                    <div class="marca">GLAXOSMITHKLINE</div>
-                    <div class="precio">$522</div>
-                    <a href="#" class="btn">Agregar Al Carrito</a>
+                    <h2 class="nombre" id="Producto5_nombre">Bandas Respira Mejor </h2>
+                    <div class="marca" id="Producto5_marca">GLAXOSMITHKLINE</div>
+                    <div class="precio" id="Producto5_precio">$522</div>
+                    <div>
+                        <input type="number" id="Producto5_cantidad" class="input_cantidad" value="1"> 
+                        <a href="#section" class="btn" onclick="AgregarAlCarrito(5);">
+                            Agregar Al Carrito
+                        </a>
+                    </div>
                 </article>
                 <article class="producto">
                     <img src="img/006.jpg" alt="Producto6">
-                    <h2 class="nombre">Ibu Evanol </h2>
-                    <div class="marca">GSK</div>
-                    <div class="precio">$150</div>
-                    <a href="#" class="btn">Agregar Al Carrito</a>
+                    <h2 class="nombre" id="Producto6_nombre">Ibu Evanol </h2>
+                    <div class="marca" id="Producto6_marca">GSK</div>
+                    <div class="precio" id="Producto6_precio">$150</div>
+                    <div>
+                        <input type="number" id="Producto6_cantidad" class="input_cantidad" value="1"> 
+                        <a href="#section" class="btn" onclick="AgregarAlCarrito(6);">
+                            Agregar Al Carrito
+                        </a>
+                    </div>
                 </article>
                 <article class="producto">
                     <img src="img/007.jpg" alt="Producto7">
-                    <h2 class="nombre">Alikal </h2>
-                    <div class="marca">GSK</div>
-                    <div class="precio">$60</div>
-                    <a href="#" class="btn">Agregar Al Carrito</a>
+                    <h2 class="nombre" id="Producto7_nombre">Alikal </h2>
+                    <div class="marca" id="Producto7_marca">GSK</div>
+                    <div class="precio" id="Producto7_precio">$60</div>
+                    <div>
+                        <input type="number" id="Producto7_cantidad" class="input_cantidad" value="1"> 
+                        <a href="#section" class="btn" onclick="AgregarAlCarrito(7);">
+                            Agregar Al Carrito
+                        </a>
+                    </div>
                 </article>
                 <article class="producto">
                     <img src="img/008.jpg" alt="Producto8">
-                    <h2 class="nombre">Anaflex </h2>
-                    <div class="marca">Bagó</div>
-                    <div class="precio">$239</div>
-                    <a href="#" class="btn">Agregar Al Carrito</a>
+                    <h2 class="nombre" id="Producto8_nombre">Anaflex </h2>
+                    <div class="marca" id="Producto8_marca">Bagó</div>
+                    <div class="precio" id="Producto8_precio">$239</div>
+                    <div>
+                        <input type="number" id="Producto8_cantidad" class="input_cantidad" value="1"> 
+                        <a href="#section" class="btn" onclick="AgregarAlCarrito(8);">
+                            Agregar Al Carrito
+                        </a>
+                    </div>
                 </article>
             </section>
             <div class="medios_de_pago"><h3>MEDIOS DE PAGO</h3></div>

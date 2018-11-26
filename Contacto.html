@@ -5,11 +5,15 @@
         <title>Farmacia PARATI</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="css/contacto.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <script src="js/contacto.js"></script>
+        <script src="js/jquery-1.12.4.js"></script>
+        <script src="js/jquery-ui.js"></script>
     </head>
     <body>
         <header id="header">
             <div class="barraSuperior" >
-               <div class="logo"> <a href="Index.html"><img src="img/fotoFarmacia.jpg" alt="Foto_De_Farmacia" /></a></div>
+                <div class="logo"> <a href="Index.html"><img src="img/fotoFarmacia.jpg" alt="Foto_De_Farmacia" /></a></div>
                 <div class="separador">                   
                 </div>
                 <div class="acciones">
@@ -56,10 +60,16 @@
                 <div class="columna2">
                     <form action="POST">
                         <label for="nombre" class="nombre">Nombre</label>
-                        <input id="nombre" type="text">
+                        <input id="nombre" name="nombre" type="text">
 
                         <label for="apellido" class="apellido">Apellido</label>
                         <input id="apellido" type="text">
+
+                        <label for="dni" class="dni">DNI</label>
+                        <input id="dni" type="text">
+
+                        <label for="fechaCumple" class="fechaCumple">Fecha De Cumpleaños</label>
+                        <input id="fechaCumple" type="datepicker">
 
                         <label for="email">Email</label>
                         <input id="email" type="email">

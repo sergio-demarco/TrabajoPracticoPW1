@@ -127,17 +127,17 @@ main{
     height:100%;
 }
 
-ul {
+.barraInferior ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-li {
+.barraInferior li {
     float: left;
 }
 
-li a {
+.barraInferior li a {
     transition: 0.3s;
     display: block;
     color: white;
@@ -146,11 +146,33 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+.barraInferior li a:hover {
     background-color: #aad677;
     transition: 0.3s;
 }
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    transition: 0.3s;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #aad677;
+    transition: 0.3s;
+}
 .active {
     background-color: #3c64b9;
 }

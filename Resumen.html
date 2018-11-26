@@ -5,12 +5,17 @@
         <title>Farmacia PARATI</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="css/resumen.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <script src="js/resumen.js"></script>
+        <script src="js/jquery-1.12.4.js"></script>
+        <script src="js/jquery-ui.js"></script>
     </head>
     <body>
-        <header>
-            <div class="barraSuperior" id="barraSuperior">
-               <div class="logo"> <a href="Index.html"><img src="img/fotoFarmacia.jpg" alt="Foto_De_Farmacia" /></a></div>
-                <div class="separador"></div>
+        <header id="header">
+            <div class="barraSuperior" >
+                <div class="logo"> <a href="Index.html"><img src="img/fotoFarmacia.jpg" alt="Foto_De_Farmacia" /></a></div>
+                <div class="separador">                   
+                </div>
                 <div class="acciones">
                     <span class="buscador">
                         <input type="text" name="buscador" id="buscador" placeholder="¿Que estás buscando?">                        
@@ -20,17 +25,17 @@
                     </span>                   
                 </div>
                 <div class="separador"></div>
-                <div class="ver_carrito"><a href="Resumen.html"><h3>Ver Carrito</h3></a></div>
-                <div class="carrito" onclick="location.href='Resumen.html';" > 
-                   <div class="numero"><p>1</p></div>
+                <div class="ver_carrito"><a href="Resumen.html"><p>Ver Carrito</p></a></div>
+                <div class="carrito" onclick="VerCarrito();" > 
+                    <div class="numero"><p id="numero_carrito">1</p></div>
                 </div>
                 <div class="separador"></div>
             </div>
 
-            <div class="barraInferior">
+            <div class="barraInferior" >
                 <ul>
                     <li><a class="active" href="Index.html">Inicio</a></li>
-                    <li><a href="Index.html#section">Productos</a></li>
+                    <li><a href="#section">Productos</a></li>
                     <li><a href="Contacto.html">Contacto</a></li>
                 </ul>
             </div>
@@ -51,32 +56,32 @@
                     </tr>
                     <tr>
                         <td>Ibupirac 800</td>
-                        <td>$ 420.00</td>
-                        <td><input type="number" value="2"></td>
-                        <td>$ 840.00</td>
+                        <td id="precio1">$ 420.00</td>
+                        <td><input type="number" value="2" id="cantidad1" onchange="calcularPrecio(1)"></td>
+                        <td id="subtotal1">$ 840.00</td>
                         <td><a href="Personalizar.html" class="btn">Modificar</a> </td>
 
                     </tr>
                     <tr>
                         <td>Tafirol Plus</td>
-                        <td>$ 312.00</td>
-                        <td><input type="number" value="1"></td>
-                        <td>$ 312.00</td>
+                        <td id="precio2">$ 312.00</td>
+                        <td><input type="number" value="1" id="cantidad2" onchange="calcularPrecio(2)"></td>
+                        <td id="subtotal2">$ 312.00</td>
                         <td><a href="Personalizar.html" class="btn">Modificar</a> </td>
 
                     </tr>
                     <tr>
                         <td>Alikal</td>
-                        <td>$ 60.00</td>
-                        <td><input type="number" value="5"></td>
-                        <td>$ 300.00</td>
+                        <td id="precio3">$ 60.00</td>
+                        <td><input type="number" value="5" id="cantidad3" onchange="calcularPrecio(3)"></td>
+                        <td id="subtotal3">$ 300.00</td>
                         <td><a href="Personalizar.html" class="btn">Modificar</a> </td>
                     </tr>
                     <tr>
                         <td> </td>
                         <td> </td>
                         <td>Subtotal:</td>
-                        <td>$ 1452.00 </td>
+                        <td id="total">$ 1452.00 </td>
                         <td> </td>
                     </tr> 
                 </table>

@@ -1,0 +1,3 @@
+$( function() {
+    $( "#fechaCumple" ).datepicker();
+  } );

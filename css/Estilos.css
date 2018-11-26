@@ -139,6 +139,7 @@ h4{
 }
 .como_comprar_titulo{
     width: 100%;
+    text-align: center;
     position: relative;
     top:85px;
     margin-top: 40px;

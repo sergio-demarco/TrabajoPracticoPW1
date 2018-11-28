@@ -5,10 +5,12 @@
         <title>Farmacia PARATI</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="css/personalizar.css">
-        <script type="text/javascript" src="js/personalizar.js"></script>
         <link rel="stylesheet" href="css/jquery-ui.css">
         <script src="js/jquery-1.12.4.js"></script>
         <script src="js/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/personalizar.js"></script>
+
     </head>
     <body >
         <header>
@@ -41,29 +43,29 @@
         </header>
         <main>   
             <div class="producto_detalle">
-                <div class="imagen_detalle">
-                    <img src="img/001.jpg"/>
+                <div  class="imagen_detalle">
+                    <div id="imagenProducto" name="imagenProducto" class="imagenProducto"><img src="img/001.jpg"/></div>
+                    <H3 id="nombreProducto" name="nombreProducto">Anaflex Rapida Accion Diclofenaco Sodico - Pastillas</H3>
                 </div>
                 <div class="detalles">
-                    <h2>TITULO PRODUCTO</h2>
-                    <input type="text" name="buscador" id="buscador" >   
+                    <h2>MODIFICAR PRODUCTO</h2>
+                    <input type="text" name="editarNombre" id="editarNombre" >   
                     <p>Color</p>
                     <table>
                         <tr>
-                            <td><img src="img/Circulo_Azul.png"><br/><input class="radio" type="radio" name="color" id="opcion_azul"></td>
-                            <td><img src="img/Circulo_Rojo.png"><br/><input class="radio" type="radio" name="color" id="opcion_rojo" ></td>
-                            <td><img src="img/Circulo_verde.png"><br/><input class="radio" type="radio" name="color" id="opcion_verde" ></td>
-                            <td><img src="img/Circulo_Amarillo.png"><br/><input class="radio" type="radio" name="color" id="opcion_amarillo" ></td>
-                            <td><img src="img/Circulo_Naranja.png"><br/><input class="radio" type="radio" name="color" id="opcion_naranja"></td>
+                            <td><img src="img/Circulo_Azul.png"><br/><input class="radio" type="radio" name="color" id="opcion_azul" value="Azul"></td>
+                            <td><img src="img/Circulo_Rojo.png"><br/><input class="radio" type="radio" name="color" id="opcion_rojo" value="Rojo"></td>
+                            <td><img src="img/Circulo_verde.png"><br/><input class="radio" type="radio" name="color" id="opcion_verde" value="Verde"></td>
+                            <td><img src="img/Circulo_Amarillo.png"><br/><input class="radio" type="radio" name="color" id="opcion_amarillo" value="Amarillo"></td>
+                            <td><img src="img/Circulo_Naranja.png"><br/><input class="radio" type="radio" name="color" id="opcion_naranja" value="Naranja"></td>
 
                         </tr>
                     </table>
                     <p>Forma</p>
                     <table>
                         <tr>
-                            <td><img src="img/forma_circulo.png"><br/><input class="radio" type="radio" name="forma" id="opcion_azul" ></td>
-                            <td><img src="img/forma_hexagono.png"><br/><input class="radio" type="radio" name="forma" id="opcion_rojo" ></td>
-                            <td><img src="img/forma_rectangulo.png"><br/><input class="radio" type="radio" name="forma" id="opcion_verde" ></td>
+                            <td><img src="img/pastillas.png"><br/><input class="radio" type="radio" name="forma" id="forma" value="Pastillas"></td>
+                            <td><img src="img/capsulas.png"><br/><input class="radio" type="radio" name="forma" id="forma" value="Capsulas"></td>
                         </tr>
                     </table>
                     <input type="submit" value=" CONFIRMAR ">

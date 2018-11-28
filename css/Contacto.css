@@ -205,12 +205,14 @@ form {
     margin: 2rem auto auto auto;
     position: relative;
     width: 100%;
+    
 }
+
 form input {
     background: #fff;
     border: 1px solid #9c9c9c;
 }
-form button {
+form input[type="submit"] {
     background: lightgrey;
     padding: 0.7em;
     width: 100%;
@@ -222,7 +224,12 @@ form button:hover {
     transition: 0.3s;
 
 }
-
+label.error {
+    width: 100%;
+    display: block;
+    padding: 0.3em;
+    box-sizing: border-box;
+}
 label {
     padding: 0.5em 0.5em 0.5em 0;
 }
@@ -230,6 +237,21 @@ label {
 input {
     padding: 0.7em;
     margin-bottom: 0.5rem;
+}
+
+input.error, select.error{
+    border:1px solid crimson;
+}
+.error{
+    color: crimson;
+        display: inherit;
+    float: right;
+}
+.enviadoOk{
+    color: limegreen;
+        display: inherit;
+    float: right;
+    
 }
 .mapa{
     width: 80%;

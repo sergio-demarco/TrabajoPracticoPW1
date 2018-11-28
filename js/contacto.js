@@ -1,3 +1,4 @@
-$( function() {
-    $( "#fechaCumple" ).datepicker();
+
+$(document).ready(function() {
+     $( "#fechaCumple" ).datepicker();
   } );

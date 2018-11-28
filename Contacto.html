@@ -6,9 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="css/contacto.css">
         <link rel="stylesheet" href="css/jquery-ui.css">
-        <script src="js/contacto.js"></script>
         <script src="js/jquery-1.12.4.js"></script>
         <script src="js/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/contacto.js"></script>
+        <script type="text/javascript" src="js/validarContactoJQ.js"></script>
+        <!--<script type="text/javascript" src="js/validarContactoJS.js"></script>-->
+
     </head>
     <body>
         <header id="header">
@@ -58,25 +62,28 @@
                     </p>
                 </div>
                 <div class="columna2">
-                    <form action="POST">
-                        <label for="nombre" class="nombre">Nombre</label>
+                    <form action="#" name="form" id="form">
+                        <label for="nombre">Nombre</label>
                         <input id="nombre" name="nombre" type="text">
-
-                        <label for="apellido" class="apellido">Apellido</label>
-                        <input id="apellido" type="text">
-
-                        <label for="dni" class="dni">DNI</label>
+                        <div></div><div id="errorNombre" class="error"></div>
+                        <label for="apellido" >Apellido</label>
+                        <input id="apellido" name="apellido" type="text">
+                        <div></div><div id="errorApellido" class="error"></div>
+                        <label for="dni" >DNI</label>
                         <input id="dni" type="text">
-
-                        <label for="fechaCumple" class="fechaCumple">Fecha De Cumpleaños</label>
+                        <div></div><div id="errorDni" class="error"></div>
+                        <label for="fechaCumple" >Fecha De Cumpleaños</label>
                         <input id="fechaCumple" type="datepicker">
-
+                        <div></div><div id="errorFechaCumple" class="error"></div>
                         <label for="email">Email</label>
                         <input id="email" type="email">
-
+                        <div></div><div id="errorEmail" class="error"></div>
                         <label for="consulta">Consulta</label>
                         <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
-                        <button>Enviar</button>
+                        <div></div><div id="errorConsulta" class="error"></div>
+                        <input type="submit" value="Enviar">
+                        <div></div><div id="mensajeEnviado" class="enviadoOk"></div>
+
                     </form>
                 </div>
             </div>

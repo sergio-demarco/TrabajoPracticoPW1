@@ -78,7 +78,7 @@ h4{
 }
 .barraSuperior .ver_carrito a{
     text-decoration: none;
-        color: #dde635;
+    color: #dde635;
     width: 100%;
 }
 .barraSuperior .carrito {
@@ -183,12 +183,67 @@ h4{
 .imagen_detalle{
     width: 50%;
     position: relative;
-
+}
+imagen_detalle h3{
+    width: 100%;
+    margin: 30%;
+    margin-left: 20%;
 }
 .imagen_detalle img{
- width: 80%;
+    width: 80%;
     height: 80%;
     margin: auto;
+    border-width: 5px;   
+    border-color: white;   
+    border-style: solid;
+}
+.imagenProducto{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    border-width: 5px;   
+    border-color: white;   
+    border-style: solid;
+}
+.cambiarColorAzul{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    border-width: 5px;   
+    border-color: blue;   
+    border-style: solid;
+}
+.cambiarColorRojo{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    border-width: 5px;   
+    border-color: red;   
+    border-style: solid;
+}
+.cambiarColorVerde{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    border-width: 5px;   
+    border-color: green;   
+    border-style: solid;
+}
+.cambiarColorAmarillo{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    border-width: 5px;   
+    border-color: yellow;   
+    border-style: solid;
+}
+.cambiarColorNaranja{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    border-width: 5px;   
+    border-color: orange;   
+    border-style: solid;
 }
 .detalles{
     width: 50%;
@@ -198,7 +253,7 @@ h4{
     margin-bottom: 1rem;
 }
 .detalles input{
-        margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 .detalles input[type="text"] {
     width: 80%;
@@ -217,7 +272,7 @@ h4{
     margin-bottom: 1rem;
 }
 .detalles td {
- text-align: center;
+    text-align: center;
 }
 .detalles td img{
     width: 50%;
